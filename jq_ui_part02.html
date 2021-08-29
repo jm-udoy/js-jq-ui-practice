@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>JQ UI Part 02</title>
+  </head>
+  <body class="bg-light">
+
+<!-- head start -->
+    <header>
+      <div class="container jsjq_ex">
+        <div class="row">
+          <div class="col-lg-10">
+            <h1 class="text-dark text-center">JQ UI PART 02</h1>
+          </div>
+          <div class="col-lg-2 go_back_btn">
+            <a href="index.html"><button class="btn btn-dark text-center">← Go Back</button></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <hr>
+<!-- head end -->
+
+    <div class="container">
+      <!-- Accordion -->
+      <h2 class="bg-dark text-light mt-2">→ Accordion</h2>
+
+      <br>
+      <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+          <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+          </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+          <p>
+          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+          velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+          suscipit faucibus urna.
+          </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+          <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+          odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+          </p>
+        </div>
+      </div>
+
+
+
+      <!-- Autocomplete -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Autocomplete</h2>
+
+      <br>
+
+      <div class="ui-widget">
+        <label for="tags">Tags: </label>
+        <input id="tags">
+      </div>
+
+
+      <!-- Checkboxradio -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Checkboxradio</h2>
+
+      <br>
+      <div class="widget">
+        <fieldset>
+          <legend>Hotel Ratings: </legend>
+          <label for="checkbox-1">2 Star</label>
+          <input class="rating_cb" type="checkbox" name="checkbox-1" id="checkbox-1">
+          <label for="checkbox-2">3 Star</label>
+          <input class="rating_cb" type="checkbox" name="checkbox-2" id="checkbox-2">
+          <label for="checkbox-3">4 Star</label>
+          <input class="rating_cb" type="checkbox" name="checkbox-3" id="checkbox-3">
+          <label for="checkbox-4">5 Star</label>
+          <input class="rating_cb" type="checkbox" name="checkbox-4" id="checkbox-4">
+        </fieldset>
+      </div>
+
+      <!-- Datepicker -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Datepicker</h2>
+
+      <br>
+      <p>Date: <input type="text" id="datepicker"></p>
+
+
+      <!-- Menu -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Menu</h2>
+
+      <br>
+
+      <ul id="menu">
+        <li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+        <li><div>Books</div></li>
+        <li><div>Clothing</div></li>
+        <li><div>Electronics →</div>
+          <ul>
+            <li class="ui-state-disabled"><div>Home Entertainment</div></li>
+            <li><div>Car Hifi</div></li>
+            <li><div>Utilities</div></li>
+          </ul>
+        </li>
+        <li><div>Movies</div></li>
+        <li><div>Music →</div>
+          <ul>
+            <li><div>Rock</div>
+              <ul>
+                <li><div>Alternative</div></li>
+                <li><div>Classic</div></li>
+              </ul>
+            </li>
+            <li><div>Jazz</div>
+              <ul>
+                <li><div>Freejazz</div></li>
+                <li><div>Big Band</div></li>
+                <li><div>Modern</div></li>
+              </ul>
+            </li>
+            <li><div>Pop</div></li>
+          </ul>
+        </li>
+        <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+      </ul>
+
+
+      <!-- Progressbar -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Progressbar</h2>
+
+      <br>
+
+      <div id="progressbar" class="progress_cus"></div>
+
+
+      <!-- Slider -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Slider</h2>
+
+      <br>
+
+      <div id="slider"></div>
+
+
+      <!-- Tabs -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Tabs</h2>
+
+      <br>
+
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Nunc tincidunt</a></li>
+          <li><a href="#tabs-2">Proin dolor</a></li>
+          <li><a href="#tabs-3">Aenean lacinia</a></li>
+        </ul>
+        <div id="tabs-1">
+          <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+        </div>
+        <div id="tabs-2">
+          <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+        </div>
+        <div id="tabs-3">
+          <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+          <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+        </div>
+      </div>
+
+
+      <!-- Tooltip -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Tooltip</h2>
+
+      <br>
+      <p><label class="tool_label" for="age">Your age:</label><input id="age" title="We ask for your age only for statistical purposes."></p>
+      <p>Hover the field to see the tooltip.</p>
+
+
+
+      <!-- Color Animation -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Color Animation</h2>
+
+      <br>
+
+      <div class="toggler">
+      <div id="effect" class="ui-widget-content ui-corner-all">
+        <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+        <p>
+          Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+        </p>
+      </div>
+    </div>
+     
+    <button id="ca_button" class="btn btn-dark ui-state-default ui-corner-all">Toggle Effect</button>
+
+
+
+    </div>
+    
+  
+
+    
+
+    
+
+    <!-- JS links -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

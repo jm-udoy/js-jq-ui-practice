@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>JS/JQ More Examples</title>
+  </head>
+  <body class="bg-light">
+
+<!-- head start -->
+    <header>
+      <div class="container jsjq_ex">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h1 class="text-dark text-center">JS/JQ MORE EXAMPLE</h1>
+          </div>
+          <div class="col-lg-2">
+            <a href="index.html"><button class="btn btn-dark text-center">← Go Back</button></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <hr>
+<!-- head end -->
+    
+    <div class="container">
+      
+      <!-- append text -->
+      <h2 class="bg-dark text-light mt-2">→ Append Example</h2>
+
+      <p class="app_para">This is a paragraph.</p>
+      <button class="btn btn-dark" id="apbtn1">Append text</button>
+
+
+      <!-- before after text -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Append before and after</h2>
+
+      <img id="baimg" src="images/logo.png" alt="jQuery" width="150" height="40"><br><br>
+
+    <button class="btn btn-dark" id="bebtn1">Insert before</button>
+    <button class="btn btn-dark" id="afbtn2">Insert after</button>
+
+
+ <!-- focus and blur -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Focus and blur</h2>
+
+      Name: <input class="in1" type="text" name="fullname"><br>
+      Email: <input class="in1" type="text" name="email">
+
+
+ <!-- Simple animation -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Simple animation</h2>
+
+      <br>
+      <div id="anidiv" style="background:gray;height:100px;width:100px;position:absolute;"></div>
+
+      <button id="anibtn" class="btn btn-dark ani_c_btn">Start Animation</button>
+
+
+ <!-- Complex animation -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Complex animation</h2>
+
+      <br>
+      <div id="anidiv2" style="background:gray;height:100px;width:100px;position:absolute;"></div>
+
+      <button id="anibtn2" class="btn btn-dark ani_c_btn">Start Animation</button>
+
+
+ <!-- Get text and HTML -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Get text and HTML</h2>
+
+      <p id="gettest">This is some <b>bold</b> text in a paragraph.</p>
+
+      <button class="btn btn-dark" id="getbtn1">Show Text</button>
+      <button class="btn btn-dark" id="getbtn2">Show HTML</button>
+
+<!-- Return width and height value -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Return width and height value</h2>
+
+      <br>
+      <div id="rewhdiv1"></div>
+      <br>
+
+      <button id="rewhbtn" class="btn btn-dark">Display dimensions of div</button>
+
+
+<!-- Traversing filtering 'last()' example -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Traversing filtering 'last()' example</h2>
+
+      <br>
+      <div class="travers" style="border: 1px solid black;">
+  <p>A paragraph in a div.</p>
+  <p>Another paragraph in a div.</p>
+      </div>
+      <br>
+
+      <div class="travers" style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+      </div>
+      <br>
+
+      <div class="travers" style="border: 1px solid black;">
+  <p>A paragraph in another div.</p>
+  <p>Another paragraph in another div.</p>
+      </div>
+
+
+<!-- Filterable Table -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Filterable Table</h2>
+
+      <br>
+      <p>Type something in the input field to search the table for first names, last names or emails:</p>  
+      <input id="myInput" type="text" placeholder="Search..">
+      <br><br>
+
+      <table>
+        <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+        </thead>
+        <tbody id="myTable">
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@mail.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@greatstuff.com</td>
+        </tr>
+        <tr>
+          <td>Anja</td>
+          <td>Ravendale</td>
+          <td>a_r@test.com</td>
+        </tr>
+        </tbody>
+      </table>
+
+
+<!-- Traversing Siblings -->
+      <br><br>
+      <h2 class="bg-dark text-light mt-2">→ Traversing Siblings</h2>
+
+
+      <div class="siblings">div (parent)
+       <p>p</p>
+       <span>span</span>
+        <h2 id="sh2">h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+  
+
+    
+
+    
+
+    <!-- JS links -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

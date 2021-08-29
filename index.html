@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>JS/JQ Part 02</title>
+  </head>
+  <body class="bg-light">
+
+
+    <!-- nav start -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" class="img-fluid logo" alt="js and jq">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link nav_custom" aria-current="page" href="js_jq_example.html">Js/Jq more Examples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav_custom" aria-current="page" href="jq_ui_part01.html">JQ Ui part 01</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav_custom" aria-current="page" href="jq_ui_part02.html">JQ Ui part 02</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <hr>
+    <!-- nav end --> 
+    
+    <div class="container">
+      <h2 class="text-dark text-center">JAVASCRIPT</h2>
+      <h2 class="bg-dark text-light mt-2">→ Click the button to change the text</h2>
+
+      <button class="btn btn-success" onclick="textChange()">Click Me</button>
+
+      <h2 id="h2_1">Hello SSB</h2>
+
+      <br>
+
+      <h2 class="bg-dark text-light mt-2">→ Using class selector</h2>
+
+      <button class="btn btn-danger" onclick="textChange2()">Click Me</button>
+
+      <h2 class="head2">Heading 01</h2>
+      <h2 class="head2">Heading 02</h2>
+      <h2 class="head2">Heading 02</h2>
+
+      <br>
+      <h2 class="bg-dark text-light mt-2">→ Showing date</h2>
+
+      <button class="btn btn-dark" onclick="textChange3()">Click Me</button>
+
+      <h2 id="date"></h2>
+
+      <br>
+      <h2 class="bg-dark text-light mt-2">→ Using Variables</h2>
+
+      <button class="btn btn-dark" onclick="textChange4()">Click Me</button>
+
+      <h2 id="txtvar"></h2>
+
+      <br>
+      <h2 class="bg-dark text-light mt-2">→ Style change</h2>
+
+      <button class="btn btn-primary" onclick="textChange5()">Click Me</button>
+
+      <h2 id="styleChange">Hello World!</h2>
+
+      <br>
+      
+      <h2 class="bg-dark text-light mt-2">→ Click the button to change the image</h2>
+
+      <button class="btn btn-success" onclick="imgOne()">Image 1</button>
+      <button class="btn btn-danger" onclick="imgTwo()">Image 2</button>
+
+      <img src="images/image1.jpg" id="img" alt="">
+
+      <br>
+      <h2 class="bg-dark text-light mt-2">→ Click the button to show alert</h2>
+
+      <button class="btn btn-secondary" onclick="alertMessage()">Click Me</button>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+
+      <br>
+      <h2 class="text-center text-dark">JQUERY</h2>
+      
+      <h2 class="bg-dark text-light mt-2">→ Click the button to show the alert</h2>
+
+      <button id="jqbtn" type="button" class="btn btn-success">Click Me</button>
+
+      <br>
+      <h2 class="bg-dark text-light mt-2">→ Click the button to hide/show text</h2>
+
+      <button id="hsbtn" type="button" class="btn btn-success">Hide</button>
+      <button id="hsbtn2" type="button" class="btn btn-primary">Show</button> 
+      <button id="hsbtn3" type="button" class="btn btn-warning">Toggle</button> 
+
+      <h4 id="hstext">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Sunt et asperiores est, iure impedit, vero nemo hic amet quasi dolores beatae eligendi cupiditate quas eos veniam suscipit omnis magni eum. Quo incidunt.</h4>
+
+      <br>
+      <h2 class="bg-dark text-light mt-2">→ Click the button to hide/show text</h2>
+
+      <button id="hsbtn4" type="button" class="btn btn-success">FadeIn</button>
+      <button id="hsbtn5" type="button" class="btn btn-primary">FadeOut</button> 
+      <button id="hsbtn6" type="button" class="btn btn-warning">FadeToggle</button> 
+      <button id="hsbtn7" type="button" class="btn btn-danger">FadeTo</button> 
+
+      <h4 id="hstext2">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Sunt et asperiores est, iure impedit, vero nemo hic amet quasi dolores beatae eligendi cupiditate quas eos veniam suscipit omnis magni eum. Quo incidunt.</h4>
+
+
+      <br>
+      <h2 class="bg-dark text-light mt-2">→ Custom Accordion</h2>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="pannel bg-primary">
+            <h2>Lorem ipsum dolor sit, amet.</h2>
+          </div>
+          <div class="flip">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga qui autem aliquam dignissimos ratione dolorem aliquid voluptates tempore laboriosam iure accusamus explicabo ipsum veniam recusandae quae nesciunt alias nisi, officiis reprehenderit! Similique adipisci deleniti obcaecati, voluptas aliquid temporibus voluptate tempora.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+    
+
+    
+
+    <!-- JS links -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
